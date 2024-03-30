@@ -1,1 +1,3 @@
 # Introduction
+The COVID-19 pandemic has left an indelible mark on global health, economy, and society, underscoring the urgent need for vigilant monitoring and comprehension of key metrics such as testing rates and hospitalization rates. As the threat of pandemics or similar health crises persists, the ability to monitor these metrics becomes increasingly crucial for effective public health responses.
+In this project, primary aim is to analyze COVID-19 testing data, hospitalization rates, and mortality rates across different states within the United States. We aim to provide light on regional differences in testing accessibility, infection rates, and the burden on healthcare systems by closely examining these measures at the state level
