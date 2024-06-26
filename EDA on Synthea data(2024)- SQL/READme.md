@@ -28,4 +28,4 @@ This data is about 110 patient who are born in between 1938 and 2023.
 16. What is the average duration of a consultation by gender?
 17. What is the blood pressure status (Hypertensive or Normal) for patients with 'Systolic Blood Pressure' readings?
 
-The possibilities are endless with this data the main aim is to showcase SQL skills 
+The possibilities are endless with this data the main aim is to showcase SQL skills. 
