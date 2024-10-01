@@ -248,5 +248,25 @@ FROM
 WHERE 
     total_count > 0
 ORDER BY 
-    cash_payment_percentage DESC;	
+    cash_payment_percentage DESC;
+
+--Who are the patients that visited the hospital in 2023, and what is their visit count ranked by frequency
+SELECT 
+    p.patient_id,
+    p.gender,
+    p.city,
+    COUNT(e.id) AS visit_count,
+    RANK() OVER (ORDER BY COUNT(e.id) DESC) AS visit_rank
+FROM 
+    public.patients AS p
+JOIN 
+    public.encounter AS e ON p.patient_id = e.patient
+WHERE 
+    EXTRACT(YEAR FROM e.start) = 2023
+GROUP BY 
+    p.patient_id, p.gender, p.city
+ORDER BY 
+    visit_count DESC;
+
+
 
