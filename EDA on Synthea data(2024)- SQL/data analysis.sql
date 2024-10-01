@@ -227,5 +227,26 @@ FROM
 WHERE
     DESCRIPTION = 'Systolic Blood Pressure';
 
-	
+--Percentage of cash payments for each procedure performed.
+WITH PaymentStats AS (
+    SELECT 
+        p.procedure_description AS procedure,
+        COUNT(CASE WHEN ct.method = 'CASH' THEN 1 END) AS cash_count,
+        COUNT(*) AS total_count
+    FROM 
+        public.procedure p
+    LEFT JOIN 
+        public.claim_transcations ct ON p.patient_id = ct.patientid
+    GROUP BY 
+        p.procedure_description
+)
+SELECT 
+    procedure,
+    ROUND((cash_count::decimal / total_count) * 100, 2) AS cash_payment_percentage
+FROM 
+    PaymentStats
+WHERE 
+    total_count > 0
+ORDER BY 
+    cash_payment_percentage DESC;	
 
