@@ -28,5 +28,6 @@ This data is about 110 patient who are born in between 1938 and 2023.
 15. What are the top 5 reasons for patient visits?
 16. What is the average duration of a consultation by gender?
 17. What is the blood pressure status (Hypertensive or Normal) for patients with 'Systolic Blood Pressure' readings?
+18. Percentage of cash payments for each procedure performed.
 
 The possibilities are endless with this data the main aim is to showcase SQL skills. 
