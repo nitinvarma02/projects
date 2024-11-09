@@ -12,7 +12,7 @@ This project is an interactive **Hospital Revenue Dashboard** designed to analyz
 - **Excel**
 - **DAX (Data Analysis Expressions)**
 
-<img src="" >
+<img src="Dashboard Image.png" >
 
 ## Getting Started
 To view this dashboard, download the `.pbix` file and open it in Power BI Desktop. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) is free to download and use.
